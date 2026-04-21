@@ -3,9 +3,10 @@ import { PhoneCall, MessageCircle, Zap } from 'lucide-react';
 
 export default function Hero() {
   const { t } = useTranslation();
+  
 
   return (
-    <section className="relative w-full min-h-[85vh] flex items-center justify-center overflow-hidden bg-[var(--color-dark-bg)]">
+    <section id="hero" className="relative w-full min-h-[85vh] flex items-center justify-center overflow-hidden bg-[var(--color-dark-bg)]">
       {/* Background Glow Effect for modern tech feel */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[var(--color-primary)]/10 rounded-full blur-[120px] pointer-events-none"></div>
 

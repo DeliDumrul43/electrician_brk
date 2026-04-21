@@ -1,24 +1,44 @@
-/* src/index.css */
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #FDCB02; /* Electric Yellow */
-  --color-dark-bg: #000000;
-  --color-card-bg: #111111;
-  --color-text-base: #FFFFFF;
-  --color-text-subtle: #9CA3AF;
+  --color-primary: var(--primary);
+  --color-dark-bg: var(--bg-main);
+  --color-card-bg: var(--bg-card);
+  --color-text-base: var(--text-base);
+  --color-text-subtle: var(--text-subtle);
   
   --font-family-display: 'Poppins', 'sans-serif';
   --font-family-body: 'Inter', 'sans-serif';
 }
 
 :root {
-  background-color: var(--color-dark-bg);
-  color: var(--color-text-base);
+  /* Default Dark Mode */
+  --primary: #FDCB02; 
+  --bg-main: #000000;
+  --bg-card: #111111;
+  --text-base: #FFFFFF;
+  --text-subtle: #9CA3AF;
+}
+
+[data-theme="light"] {
+  /* Light Mode Palette */
+  --primary: #EAB308; /* Slightly darker yellow for contrast on white */
+  --bg-main: #FFFFFF;
+  --bg-card: #F3F4F6; /* Light gray */
+  --text-base: #111827; /* Near black */
+  --text-subtle: #4B5563; /* Medium gray */
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
 }
 
 body {
+  background-color: var(--color-dark-bg);
+  color: var(--color-text-base);
   font-family: var(--font-family-body);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 h1, h2, h3, h4 {

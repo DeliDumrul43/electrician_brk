@@ -1,1 +1,94 @@
-{}
+{
+  "nav": {
+    "services": "Services",
+    "about": "About Me",
+    "gallery": "Gallery",
+    "contact": "Contact"
+  },
+  "hero": {
+    "badge": "24/7 PROFESSIONAL SERVICE",
+    "title_part1": "Fast & Reliable",
+    "title_highlight": "Solutions",
+    "title_part2": "for Electrical Issues",
+    "subtitle": "Guaranteed and immediate response expert for all electrical installation, fault, maintenance, and repair work in your home and workplace.",
+    "btn_call": "Call Now",
+    "btn_whatsapp": "Reach via WhatsApp"
+  },
+  "services": {
+    "main_title": "What Do I Do?",
+    "main_subtitle": "I offer a wide range of professional technical services and contracting for homes, offices, villas, or industrial facilities.",
+    "list": {
+      "faults": "Electrical Faults",
+      "camera": "Security Camera Systems",
+      "intercom": "Video & Audio Intercom Systems",
+      "alarm": "Alarm Systems",
+      "workplace": "Workplace Electrical Installation",
+      "cable_tray": "Cable Tray Applications",
+      "renovation": "Workplace & Home Renovations",
+      "villa": "Villa Electrical Installation",
+      "knx": "KNX Smart Home Systems",
+      "solar": "Solar Energy Systems",
+      "lighting": "Lighting Systems",
+      "subscription": "Electricity Subscription Procedures",
+      "underground": "Underground Cabling",
+      "construction": "Construction Site Subscriptions, etc."
+    }
+  },
+  "about": {
+    "title": "Why Choose Me?",
+    "description": "With years of experience, I always prioritize customer satisfaction and occupational safety. I do not delegate the work; I handle it personally. All materials used are 1st class quality, and all workmanship is under my guarantee.",
+    "point1_title": "Guaranteed Workmanship",
+    "point1_desc": "All repair and installation processes are under my personal guarantee.",
+    "point2_title": "Fast & Direct Communication",
+    "point2_desc": "You speak directly with the master, not an intermediary, ensuring the fastest response in emergencies.",
+    "point3_title": "Individual Expertise",
+    "point3_desc": "Professional service from a certified technician who has completed occupational safety training.",
+    "ref_title": "Strong References",
+    "ref_subtitle": "Some of the businesses that trust me and corporate projects I have personally completed:",
+    "refs": {
+      "motoes": {
+        "title": "MOTOES Production Factory",
+        "desc": "Akdeniz Industrial Site - Cable tray application, electrical installation, camera and alarm systems."
+      },
+      "tasmotor": {
+        "title": "Taş Motor",
+        "desc": "Electrical installation, cable tray application, and lighting system."
+      },
+      "aksupastane": {
+        "title": "Aksu Patisserie",
+        "desc": "Lighting system installation and optimization."
+      },
+      "aksukasap": {
+        "title": "Aksu Şen Butcher",
+        "desc": "General electrical renovation and lighting system."
+      }
+    }
+  },
+  "gallery": {
+    "main_title": "Completed Projects",
+    "main_subtitle": "Review the professional electrical applications I have personally completed across various sectors.",
+    "close": "Close",
+    "prev": "Previous",
+    "next": "Next"
+  },
+  "contact": {
+    "title": "Contact Me",
+    "subtitle": "You can contact me 24/7 for electrical faults, installation work, or project requests.",
+    "info_title": "Contact Information",
+    "name": "Burak Arpat",
+    "address": "Macun 1019. Sokak No:34 Kapı No:5 07112 Aksu / Antalya / Türkiye",
+    "phone": "0534 066 60 20",
+    "email": "burakelektrik007@gmail.com",
+    "tax_office": "Düden Tax Office",
+    "call_now": "Call Now",
+    "whatsapp_message": "Message on WhatsApp",
+    "whatsapp_prefill": "Hello Mr. Burak, I am reaching out from your website. I would like to get information about your electrical services."
+  },
+  "footer": {
+    "description": "For your safety and comfort, I offer 24/7 uninterrupted, guaranteed, and professional electrical technical service.",
+    "links_title": "Quick Links",
+    "contact_title": "Contact",
+    "rights": "All rights reserved.",
+    "developer": "Designed & Developed by"
+  }
+}

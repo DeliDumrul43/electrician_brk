@@ -7,5 +7,75 @@
     "subtitle": "Ev ve iş yerlerinizdeki tüm elektrik tesisatı, arıza, bakım ve onarım işleri için garantili ve anında müdahale uzmanı.",
     "btn_call": "Hemen Ara",
     "btn_whatsapp": "WhatsApp ile Ulaş"
+  },
+  "services": {
+    "main_title": "Neler Yapıyoruz?",
+    "main_subtitle": "Ev, ofis, villa veya sanayi tesisleri için geniş yelpazede profesyonel teknik servis ve taahhüt hizmetleri sunuyoruz.",
+    "list": {
+      "faults": "Elektrik Arızaları",
+      "camera": "Güvenlik Kamera Sistemleri",
+      "intercom": "Görüntülü ve Sesli Diyafon Sistemleri",
+      "alarm": "Alarm Sistemleri",
+      "workplace": "İşyeri Elektrik Tesisatı",
+      "cable_tray": "Kablo Tava Uygulamaları",
+      "renovation": "İşyeri ve Daire Tadilatları",
+      "villa": "Villa Elektrik Tesisatı",
+      "knx": "KNX Akıllı Ev Sistemleri",
+      "solar": "Güneş Enerji Sistemleri",
+      "lighting": "Aydınlatma Sistemleri",
+      "subscription": "Elektrik Abonelik İşlemleri",
+      "underground": "Yeraltı Kablolama İşlemleri",
+      "construction": "Şantiye Aboneliği İşlemleri vb."
+    }
+  },
+  "gallery": {
+    "main_title": "Tamamlanan Projeler",
+    "main_subtitle": "Farklı sektörlerde ve yaşam alanlarında bizzat tamamladığım profesyonel elektrik uygulamalarını inceleyin.",
+    "filters": {
+      "all": "HEPSİ"
+    }
+  },
+  "about": {
+    "title": "Neden Beni Tercih Etmelisiniz?",
+    "description": "Yılların verdiği tecrübe ile müşteri memnuniyetini ve iş güvenliğini her zaman ön planda tutuyorum. İşi başkasına devretmez, bizzat kendim ilgilenirim. Kullandığım tüm malzemeler 1. sınıf kalite olup, yaptığım tüm işçilikler garanti kapsamındadır.",
+    "point1_title": "Garantili İşçilik",
+    "point1_desc": "Yaptığım tüm onarım ve montaj işlemleri bizzat kendi garantim altındadır.",
+    "point2_title": "Hızlı ve Doğrudan İletişim",
+    "point2_desc": "Aracılarla değil, doğrudan ustasıyla görüşür, acil durumlarda en hızlı müdahaleyi alırsınız.",
+    "point3_title": "Bireysel Uzmanlık",
+    "point3_desc": "Sertifikalı, iş güvenliği eğitimlerini tamamlamış, titiz ve temiz çalışan profesyonel hizmet.",
+    "ref_title": "Güçlü Referanslarım",
+    "ref_subtitle": "Bana güvenen işletmeler ve bizzat tamamladığım kurumsal projelerden bazıları:",
+    "refs": {
+      "motoes": {
+        "title": "MOTOES Üretim Fabrikası",
+        "desc": "Akdeniz Sanayi Sitesi - Kablo tava uygulaması, elektrik tesisatı, kamera ve alarm sistemleri."
+      },
+      "tasmotor": {
+        "title": "Taş Motor",
+        "desc": "Elektrik tesisatı, kablo tava uygulaması ve aydınlatma sistemi."
+      },
+      "aksupastane": {
+        "title": "Aksu Pastanesi",
+        "desc": "Aydınlatma sistemi kurulumu ve optimizasyonu."
+      },
+      "aksukasap": {
+        "title": "Aksu Şen Kasap",
+        "desc": "Genel elektrik tadilatı ve aydınlatma sistemi."
+      }
+    }
+  },
+  "contact": {
+    "title": "Bana Ulaşın",
+    "subtitle": "Elektrik arızaları, tesisat işleri veya proje talepleriniz için 7/24 iletişim kurabilirsiniz.",
+    "info_title": "İletişim Bilgileri",
+    "name": "Burak Arpat",
+    "address": "Macun 1019. Sokak No:34 Kapı No:5 07112 Aksu / Antalya / Türkiye",
+    "phone": "0534 066 60 20",
+    "email": "burakelektrik007@gmail.com",
+    "tax_office": "Düden Vergi Dairesi Müd.",
+    "call_now": "Hemen Ara",
+    "whatsapp_message": "WhatsApp'tan Yaz",
+    "whatsapp_prefill": "Merhaba Burak Bey, web sitenizden ulaşıyorum. Elektrik hizmetleri hakkında bilgi almak istiyorum."
   }
 }
