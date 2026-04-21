@@ -1,4 +1,10 @@
 {
+  "nav": {
+    "services": "Hizmetler",
+    "about": "Hakkımızda",
+    "gallery": "Galeri",
+    "contact": "İletişim"
+  },
   "hero": {
     "badge": "7/24 PROFESYONEL HİZMET",
     "title_part1": "Elektrik Arızalarında",
@@ -77,5 +83,12 @@
     "call_now": "Hemen Ara",
     "whatsapp_message": "WhatsApp'tan Yaz",
     "whatsapp_prefill": "Merhaba Burak Bey, web sitenizden ulaşıyorum. Elektrik hizmetleri hakkında bilgi almak istiyorum."
+  },
+  "footer": {
+    "description": "Güvenliğiniz ve konforunuz için 7/24 kesintisiz, garantili ve profesyonel elektrik teknik servis hizmeti sunuyorum.",
+    "links_title": "Hızlı Bağlantılar",
+    "contact_title": "İletişim",
+    "rights": "Tüm hakları saklıdır.",
+    "developer": "Designed & Developed by"
   }
 }

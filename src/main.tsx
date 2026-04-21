@@ -1,24 +1,28 @@
-// src/main.tsx
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { HelmetProvider } from 'react-helmet-async'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import AppLayout from './App' // Our main layout file
-import IndexPage from './pages/IndexPage' // We will create this
-import './index.css' // We added our tailwind theme here
-import './i18n/config' // i18n initializer we'll create next
+import { createBrowserRouter, RouterProvider, Navigate } from 'react-router-dom'
+import AppLayout from './App'
+import IndexPage from './pages/IndexPage'
+import './index.css'
+import './i18n/config'
 
-// Define a dynamic route that captures the language code
+// 1. Updated Routing Architecture
 const router = createBrowserRouter([
   {
-    path: "/", // Redirect root to /tr by default for now
+    // The language parameter is now at the absolute root level
+    path: "/:lang", 
     element: <AppLayout />,
     children: [
-      { path: ":lang/", element: <IndexPage /> }, // Main single-page scroll
-      { path: ":lang/services", element: <IndexPage /> }, // Anchor handling
-      // Add other specific pages (if needed) like contact form separately
+      // The IndexPage will load automatically inside the layout
+      { index: true, element: <IndexPage /> }, 
     ],
   },
+  {
+    // 2. If someone visits the naked domain (burakelektrik.com), force them to /tr
+    path: "/",
+    element: <Navigate to="/tr" replace /> 
+  }
 ])
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
