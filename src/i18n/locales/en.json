@@ -6,7 +6,7 @@
     "contact": "Contact"
   },
   "hero": {
-    "badge": "24/7 PROFESSIONAL SERVICE",
+    "badge": "PROFESSIONAL SERVICE",
     "title_part1": "Fast & Reliable",
     "title_highlight": "Solutions",
     "title_part2": "for Electrical Issues",
@@ -18,6 +18,7 @@
     "main_title": "What Do I Do?",
     "main_subtitle": "I offer a wide range of professional technical services and contracting for homes, offices, villas, or industrial facilities.",
     "list": {
+      "ev_charging": "EV Charging Station Installation",
       "faults": "Electrical Faults",
       "camera": "Security Camera Systems",
       "intercom": "Video & Audio Intercom Systems",
@@ -31,7 +32,8 @@
       "lighting": "Lighting Systems",
       "subscription": "Electricity Subscription Procedures",
       "underground": "Underground Cabling",
-      "construction": "Construction Site Subscriptions, etc."
+      "construction": "Construction Site Subscriptions, etc.",
+      "ev charging station": "Setup EV charging Stations"
     }
   },
   "about": {
@@ -83,6 +85,48 @@
     "call_now": "Call Now",
     "whatsapp_message": "Message on WhatsApp",
     "whatsapp_prefill": "Hello Mr. Burak, I am reaching out from your website. I would like to get information about your electrical services."
+  },
+  "projects": {
+    "p1": { 
+      "title": "Alarm Systems", 
+      "desc": "Installation of wired and wireless professional burglar and fire alarm systems." 
+    },
+    "p2": { 
+      "title": "Lighting Systems", 
+      "desc": "Indoor, outdoor, showcase, office, and landscape lighting design and installation." 
+    },
+    "p3": { 
+      "title": "Distribution Panels", 
+      "desc": "Design, installation, and renovation of building main entrance, floor distribution, and sub-panels." 
+    },
+    "p4": { 
+      "title": "Cable Tray Installations", 
+      "desc": "Heavy-duty industrial, office, and parking lot cable tray routing and carrier system setup." 
+    },
+    "p5": { 
+      "title": "Camera Systems", 
+      "desc": "24/7 recording, high-resolution night vision CCTV and IP camera installations." 
+    },
+    "p6": { 
+      "title": "KNX Smart Home Systems", 
+      "desc": "Infrastructure for remotely controllable automation and smart home modules." 
+    },
+    "p7": { 
+      "title": "Compensation Panels", 
+      "desc": "Installation and maintenance of compensation panels to prevent reactive penalties and ensure energy efficiency." 
+    },
+    "p8": { 
+      "title": "Concealed Wiring", 
+      "desc": "Construction phase piping, junction box placement, and flush-mounted electrical wiring." 
+    },
+    "p9": { 
+      "title": "Electrical Installation", 
+      "desc": "General electrical wiring, socket-switch branch lines, and power distribution." 
+    },
+    "p10": { 
+      "title": "Grounding & Lightning Protection", 
+      "desc": "Foundation grounding, lightning rod systems, and measurement procedures for building safety." 
+    }
   },
   "footer": {
     "description": "For your safety and comfort, I offer 24/7 uninterrupted, guaranteed, and professional electrical technical service.",

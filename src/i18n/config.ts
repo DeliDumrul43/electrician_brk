@@ -4,12 +4,10 @@ import { initReactI18next } from 'react-i18next';
 // We'll create these files shortly in src/i18n/locales/
 import translationTR from './locales/tr.json';
 import translationEN from './locales/en.json';
-import translationRU from './locales/ru.json';
 
 const resources = {
   tr: { translation: translationTR },
   en: { translation: translationEN },
-  ru: { translation: translationRU }
 };
 
 i18n

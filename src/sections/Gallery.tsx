@@ -18,49 +18,123 @@ export default function Gallery() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  // 3. Cleaned Data Structure
   const projects: Project[] = [
     { 
-      id: 1, title: 'Kablo Tava Uygulaması', description: 'Fabrika üretim bandı için ağır hizmet tipi kablo tavası çekimi ve güç dağıtım altyapısı.',
+      id: 1,
+      title: t('projects.p1.title'), 
+      description: t('projects.p1.desc'),
       gallery: [
-        'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=1200',
-        'https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=1200'
+        '/projects/Alarm sistemleri/foto1.jpg',
+        '/projects/Alarm sistemleri/foto2.jpg',
+        '/projects/Alarm sistemleri/foto3.jpg'
       ] 
     },
     { 
-      id: 2, title: 'Sanayi Tipi Tesisat', description: 'Endüstriyel makineler için özel sigorta panosu ve yüksek akım tesisat çekimi.',
+      id: 2,
+      title: t('projects.p2.title'), 
+      description: t('projects.p2.desc'),
       gallery: [
-        'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1200'
+        '/projects/Aydınlatma sistemleri/foto1.jpg',
+        '/projects/Aydınlatma sistemleri/foto2.jpg',
+        '/projects/Aydınlatma sistemleri/foto3.jpg',
+        '/projects/Aydınlatma sistemleri/foto4.jpg',
+        '/projects/Aydınlatma sistemleri/foto5.jpg',
+        '/projects/Aydınlatma sistemleri/foto6.jpg',
+        '/projects/Aydınlatma sistemleri/foto7.jpg',
+        '/projects/Aydınlatma sistemleri/foto8.jpg',
+        '/projects/Aydınlatma sistemleri/foto9.jpg',
+        '/projects/Aydınlatma sistemleri/foto10.jpg'
       ] 
     },
     { 
-      id: 3, title: 'Dekoratif Aydınlatma', description: 'Restoran içi led aydınlatma ve aplik montaj projesi.',
+      id: 3,
+      title: t('projects.p3.title'), 
+      description: t('projects.p3.desc'),
       gallery: [
-        'https://images.unsplash.com/photo-1498084393753-b411b2d26b34?q=80&w=1200',
-        'https://images.unsplash.com/photo-1562810151-a9e88d1d0336?q=80&w=1200'
+        '/projects/Dağıtım panoları/foto1.jpg',
+        '/projects/Dağıtım panoları/foto2.jpg',
+        '/projects/Dağıtım panoları/foto3.jpg',
+        '/projects/Dağıtım panoları/foto4.jpg'
+
+        
       ] 
     },
     { 
-      id: 4, title: 'Bina Ana Pano Kurulumu', description: 'Yeni yapılan iş merkezinin ana dağıtım panosu ve kaçak akım rölesi montajı.',
+      id: 4,
+      title: t('projects.p4.title'), 
+      description: t('projects.p4.desc'),
       gallery: [
-        'https://images.unsplash.com/photo-1581092921461-eab62e97a780?q=80&w=1200',
-        'https://images.unsplash.com/photo-1581092335397-9583eb92d232?q=80&w=1200',
-        'https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1200'
+        '/projects/Kablo Tavası/foto1.jpg',
+        '/projects/Kablo Tavası/foto2.jpg',
+        '/projects/Kablo Tavası/foto3.jpg',
+        '/projects/Kablo Tavası/foto4.jpg',
+        '/projects/Kablo Tavası/foto5.jpg',
+        
+      
+
       ] 
     },
     { 
-      id: 5, title: 'CCTV Kamera Sistemi', description: '7/24 gece görüşlü, 16 kanallı güvenlik kamera sistemi altyapı ve kurulumu.',
+      id: 5, 
+      title: t('projects.p5.title'), 
+      description: t('projects.p5.desc'),
       gallery: [
-        'https://images.unsplash.com/photo-1616110839074-be420063c788?q=80&w=1200'
+        '/projects/Kamera sistemleri/foto1.jpg',
+        '/projects/Kamera sistemleri/foto2.jpg',
+        '/projects/Kamera sistemleri/foto3.jpg',
+        '/projects/Kamera sistemleri/foto4.jpg'
       ] 
     },
     { 
-      id: 6, title: 'Villa Elektrik Tesisatı', description: 'Sıfırdan villa elektrik tesisatı çekimi ve topraklama hattı işlemleri.',
+      id: 6,
+      title: t('projects.p6.title'), 
+      description: t('projects.p6.desc'),
       gallery: [
-        'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1200',
-        'https://images.unsplash.com/photo-1595183868078-43d7c50a9eb9?q=80&w=1200'
+        '/projects/KNX Akıllı Ev sistemleri/foto1.jpg',
+        '/projects/KNX Akıllı Ev sistemleri/foto2.jpg'
       ] 
     },
+    { 
+      id: 7, 
+      title: t('projects.p7.title'), 
+      description: t('projects.p7.desc'),
+      gallery: [
+        '/projects/Kompanzasyon panoları/foto1.jpg',
+        '/projects/Kompanzasyon panoları/foto2.jpg',
+        '/projects/Kompanzasyon panoları/foto3.jpg'
+      ] 
+    },
+    { 
+      id: 8, 
+      title: t('projects.p8.title'), 
+      description: t('projects.p8.desc'),
+      gallery: [
+        '/projects/Sıva altı elektrik tesisatı/foto1.jpg',
+        '/projects/Sıva altı elektrik tesisatı/foto2.jpg',
+        '/projects/Sıva altı elektrik tesisatı/foto3.jpg',
+        '/projects/Sıva altı elektrik tesisatı/foto4.jpg'
+      ] 
+    },
+    { 
+      id: 9,
+      title: t('projects.p9.title'), 
+      description: t('projects.p9.desc'),
+      gallery: [
+        '/projects/Tesisat/foto1.jpg',
+        '/projects/Tesisat/foto2.jpg',
+        '/projects/Tesisat/foto3.jpg'
+      ] 
+    },
+    { 
+      id: 10, 
+      title: t('projects.p10.title'), 
+      description: t('projects.p10.desc'),
+      gallery: [
+        '/projects/Topraklama ve paratoner sistemleri/foto1.jpg',
+        '/projects/Topraklama ve paratoner sistemleri/foto2.jpg',
+        '/projects/Topraklama ve paratoner sistemleri/foto3.jpg'
+      ] 
+    }
   ];
 
   // 4. Modal Controls
@@ -101,22 +175,31 @@ export default function Gallery() {
         </div>
 
         {/* Thumbnail Grid - No Filters */}
+        {/* Thumbnail Grid - No Filters */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project, index) => (
             <motion.div 
               key={project.id} 
               initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4, delay: index * 0.05 }}
               onClick={() => openModal(project)}
-              className="group relative aspect-[4/3] overflow-hidden rounded-xl bg-[var(--color-card-bg)] cursor-pointer"
+              className="group relative aspect-[4/3] overflow-hidden rounded-xl bg-[var(--color-card-bg)] cursor-pointer shadow-lg"
             >
-              <img src={project.gallery[0]} alt={project.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 opacity-80 group-hover:opacity-100"/>
-              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-                <span className="font-bold text-white text-lg">{project.title}</span>
-                {project.gallery.length > 1 && (
-                  <span className="text-[var(--color-primary)] text-xs font-bold mt-2 uppercase tracking-wider">
-                    {project.gallery.length} Fotoğraf
-                  </span>
-                )}
+              {/* Image with a slightly softer zoom on hover so it doesn't distract from the text */}
+              <img src={project.gallery[0]} alt={project.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 opacity-90 group-hover:opacity-100"/>
+              
+              {/* UPDATED OVERLAY: Removed opacity-0 and group-hover:opacity-100. It is now always visible. */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-6 group-hover:from-black transition-colors duration-300">
+                
+                {/* Optional: Add a slight upward movement to the text on hover for a nice interactive feel */}
+                <div className="transform transition-transform duration-300 group-hover:-translate-y-2">
+                  <span className="font-bold text-white text-lg drop-shadow-md block">{project.title}</span>
+                  {project.gallery.length > 1 && (
+                    <span className="text-[var(--color-primary)] text-xs font-bold mt-2 uppercase tracking-wider block">
+                      {project.gallery.length} {t('gallery.photos', 'Fotoğraf')}
+                    </span>
+                  )}
+                </div>
+                
               </div>
             </motion.div>
           ))}

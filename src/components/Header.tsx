@@ -62,7 +62,7 @@ export default function Header() {
           </button>
 
           <div className="flex gap-2">
-            {['tr', 'en', 'ru'].map((l) => (
+            {['tr', 'en'].map((l) => (
               <button
                 key={l}
                 onClick={() => handleLanguageChange(l)}

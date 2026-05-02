@@ -6,7 +6,7 @@
     "contact": "İletişim"
   },
   "hero": {
-    "badge": "7/24 PROFESYONEL HİZMET",
+    "badge": "PROFESYONEL HİZMET",
     "title_part1": "Elektrik Arızalarında",
     "title_highlight": "Hızlı ve Güvenilir",
     "title_part2": "Çözüm",
@@ -18,6 +18,7 @@
     "main_title": "Neler Yapıyoruz?",
     "main_subtitle": "Ev, ofis, villa veya sanayi tesisleri için geniş yelpazede profesyonel teknik servis ve taahhüt hizmetleri sunuyoruz.",
     "list": {
+      "ev_charging": "Elektrikli Araç Şarj İstasyonu Kurulumu",
       "faults": "Elektrik Arızaları",
       "camera": "Güvenlik Kamera Sistemleri",
       "intercom": "Görüntülü ve Sesli Diyafon Sistemleri",
@@ -69,6 +70,48 @@
         "title": "Aksu Şen Kasap",
         "desc": "Genel elektrik tadilatı ve aydınlatma sistemi."
       }
+    }
+  },
+  "projects": {
+    "p1": { 
+      "title": "Alarm Sistemleri", 
+      "desc": "Kablolu ve kablosuz profesyonel hırsız ve yangın alarm sistemleri kurulumu." 
+    },
+    "p2": { 
+      "title": "Aydınlatma Sistemleri", 
+      "desc": "İç ve dış mekan, vitrin, ofis ve peyzaj aydınlatma projelendirme ve montajı." 
+    },
+    "p3": { 
+      "title": "Dağıtım Panoları", 
+      "desc": "Bina ana giriş, kat dağıtım ve tali pano dizaynı, montajı ve yenilemesi." 
+    },
+    "p4": { 
+      "title": "Kablo Tavası", 
+      "desc": "Ağır hizmet sanayi tipi, ofis ve otopark kablo tavası çekimi ve taşıyıcı sistem kurulumu." 
+    },
+    "p5": { 
+      "title": "Kamera Sistemleri", 
+      "desc": "7/24 kayıt yapabilen, gece görüşlü yüksek çözünürlüklü CCTV ve IP kamera tesisatı." 
+    },
+    "p6": { 
+      "title": "KNX Akıllı Ev Sistemleri", 
+      "desc": "Uzaktan kontrol edilebilir otomasyon ve akıllı ev modülleri altyapısı." 
+    },
+    "p7": { 
+      "title": "Kompanzasyon Panoları", 
+      "desc": "Reaktif ceza önleyici, enerji verimliliği sağlayan kompanzasyon panosu kurulum ve bakımı." 
+    },
+    "p8": { 
+      "title": "Sıva Altı Elektrik Tesisatı", 
+      "desc": "İnşaat aşaması borulama, buat yerleşimi ve kırım-döküm sonrası sıva altı tesisat." 
+    },
+    "p9": { 
+      "title": "Tesisat", 
+      "desc": "Genel elektrik tesisatı çekimi, priz-anahtar linye hatları ve güç dağıtımı." 
+    },
+    "p10": { 
+      "title": "Topraklama ve Paratoner", 
+      "desc": "Bina güvenliği için temel topraklaması, paratoner sistemleri ve ölçüm işlemleri." 
     }
   },
   "contact": {

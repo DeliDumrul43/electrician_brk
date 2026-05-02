@@ -5,7 +5,6 @@ import logo from '../assets/logo.jpg';
 export default function Loader() {
   return (
     <motion.div 
-      // This handles the fade-out when the loader unmounts
       initial={{ opacity: 1 }}
       exit={{ opacity: 0, transition: { duration: 0.5, ease: "easeInOut" } }}
       className="fixed inset-0 z-[9999] bg-[#000000] flex flex-col items-center justify-center overflow-hidden"

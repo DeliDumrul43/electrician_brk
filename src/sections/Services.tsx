@@ -3,20 +3,28 @@ import { motion } from 'framer-motion';
 import { 
   Zap, Cctv, MonitorSpeaker, BellRing, Factory, Cable, 
   Hammer, Home, Cpu, Sun, Lightbulb, FileSignature, 
-  ArrowDownToLine, HardHat 
+  ArrowDownToLine, HardHat, PlugZap 
 } from 'lucide-react';
 
 export default function Services() {
   const { t } = useTranslation();
 
   const servicesList = [
-    { id: 'faults', icon: Zap }, { id: 'camera', icon: Cctv },
-    { id: 'intercom', icon: MonitorSpeaker }, { id: 'alarm', icon: BellRing },
-    { id: 'workplace', icon: Factory }, { id: 'cable_tray', icon: Cable },
-    { id: 'renovation', icon: Hammer }, { id: 'villa', icon: Home },
-    { id: 'knx', icon: Cpu }, { id: 'solar', icon: Sun },
-    { id: 'lighting', icon: Lightbulb }, { id: 'subscription', icon: FileSignature },
-    { id: 'underground', icon: ArrowDownToLine }, { id: 'construction', icon: HardHat },
+    { id: 'ev_charging', icon: PlugZap }, // ADDED TO THE VERY TOP
+    { id: 'faults', icon: Zap }, 
+    { id: 'camera', icon: Cctv },
+    { id: 'intercom', icon: MonitorSpeaker }, 
+    { id: 'alarm', icon: BellRing },
+    { id: 'workplace', icon: Factory }, 
+    { id: 'cable_tray', icon: Cable },
+    { id: 'renovation', icon: Hammer }, 
+    { id: 'villa', icon: Home },
+    { id: 'knx', icon: Cpu }, 
+    { id: 'solar', icon: Sun },
+    { id: 'lighting', icon: Lightbulb }, 
+    { id: 'subscription', icon: FileSignature },
+    { id: 'underground', icon: ArrowDownToLine }, 
+    { id: 'construction', icon: HardHat },
   ];
 
   return (

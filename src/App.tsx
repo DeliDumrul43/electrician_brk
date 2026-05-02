@@ -8,7 +8,8 @@ import { AnimatePresence } from 'framer-motion';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import FloatingWhatsApp from './components/FloatingWhatsApp';
-import Loader from './components/Loader';
+import Loader from './components/Loader'
+
 
 export default function AppLayout() {
   const { lang } = useParams<{ lang?: string }>();
@@ -30,7 +31,7 @@ export default function AppLayout() {
 
   // Language Syncing Logic
   useEffect(() => {
-    const supportedLangs = ['tr', 'en', 'ru'];
+    const supportedLangs = ['tr', 'en'];
     if (lang && supportedLangs.includes(lang)) {
       if (i18n.language !== lang) {
         i18n.changeLanguage(lang);
@@ -44,10 +45,9 @@ export default function AppLayout() {
     <div className="flex flex-col min-h-screen">
       <Helmet>
         <html lang={i18n.language} />
-        <link rel="alternate" hreflang="tr" href={`https://burakelektrik.com/tr`} />
-        <link rel="alternate" hreflang="en" href={`https://burakelektrik.com/en`} />
-        <link rel="alternate" hreflang="ru" href={`https://burakelektrik.com/ru`} />
-        <link rel="alternate" hreflang="x-default" href={`https://burakelektrik.com/tr`} />
+        <link rel="alternate" hrefLang="tr" href={`https://burakelektrik.com/tr`} />
+        <link rel="alternate" hrefLang="en" href={`https://burakelektrik.com/en`} />
+        <link rel="alternate" hrefLang="x-default" href={`https://burakelektrik.com/tr`} />
       </Helmet>
 
       {/* 3. The Loader Overlay */}
