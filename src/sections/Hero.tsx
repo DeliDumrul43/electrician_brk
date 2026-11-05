@@ -21,12 +21,13 @@ export default function Hero() {
         </div>
 
         {/* Main Headline */}
-        <h1 className="text-5xl md:text-7xl font-bold text-[var(--color-text-base)] leading-tight mb-6 max-w-4xl">
-          {t('hero.title_part1', 'Elektrik Arızalarında')}{' '}
-          <span className="text-[var(--color-primary)]">
-            {t('hero.title_highlight', 'Hızlı ve Güvenilir')}
+        <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight mb-6">
+          {t('hero.title_part1')} <br className="hidden md:block" />
+          <span className="text-[var(--color-primary)] inline-block">
+            {t('hero.title_highlight')}
           </span>{' '}
-          {t('hero.title_part2', 'Çözüm')}
+          <br className="hidden md:block" />
+          {t('hero.title_part2')}
         </h1>
 
         {/* Subheadline */}

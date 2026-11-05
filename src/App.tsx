@@ -15,6 +15,9 @@ export default function AppLayout() {
   const { lang } = useParams<{ lang?: string }>();
   const navigate = useNavigate();
   const { i18n } = useTranslation();
+  
+  const currentLang = lang || 'tr';
+  const canonicalUrl = `https://www.antalyaelektrikservisi.com.tr/${currentLang}`;
 
   // 1. Loading State
   const [isLoading, setIsLoading] = useState(true);
@@ -45,6 +48,7 @@ export default function AppLayout() {
     <div className="flex flex-col min-h-screen">
       <Helmet>
         <html lang={i18n.language} />
+        <link rel="canonical" href={canonicalUrl} />
         <link rel="alternate" hrefLang="tr" href={`https://burakelektrik.com/tr`} />
         <link rel="alternate" hrefLang="en" href={`https://burakelektrik.com/en`} />
         <link rel="alternate" hrefLang="x-default" href={`https://burakelektrik.com/tr`} />

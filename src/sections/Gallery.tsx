@@ -180,17 +180,32 @@ export default function Gallery() {
           {projects.map((project, index) => (
             <motion.div 
               key={project.id} 
-              initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4, delay: index * 0.05 }}
+              initial={{ opacity: 0, y: 20 }} 
+              whileInView={{ opacity: 1, y: 0 }} 
+              viewport={{ once: true }} 
+              transition={{ duration: 0.4, delay: index * 0.05 }}
               onClick={() => openModal(project)}
-              className="group relative aspect-[4/3] overflow-hidden rounded-xl bg-[var(--color-card-bg)] cursor-pointer shadow-lg"
+              /* bg-gray-800 ve animate-pulse ekledik (Resim yüklenene kadar yanıp sönen şık bir kutu olacak) */
+              className="group relative aspect-[4/3] overflow-hidden rounded-xl bg-gray-800/80 animate-pulse cursor-pointer shadow-lg"
             >
-              {/* Image with a slightly softer zoom on hover so it doesn't distract from the text */}
-              <img src={project.gallery[0]} alt={project.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 opacity-90 group-hover:opacity-100"/>
+              <img 
+                src={project.gallery[0]} 
+                alt={project.title} 
+                loading="lazy" 
+                decoding="async"
+                /* Başlangıçta opacity-0 (görünmez). Yüklendiği (onLoad) an animate-pulse'u durdurup resmi gösterir */
+                className="w-full h-full object-cover transition-all duration-700 opacity-0 group-hover:scale-105"
+                onLoad={(e) => {
+                  const target = e.currentTarget;
+                  target.classList.remove('opacity-0');
+                  target.classList.add('opacity-90');
+                  if (target.parentElement) {
+                    target.parentElement.classList.remove('animate-pulse');
+                  }
+                }}
+              />
               
-              {/* UPDATED OVERLAY: Removed opacity-0 and group-hover:opacity-100. It is now always visible. */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-6 group-hover:from-black transition-colors duration-300">
-                
-                {/* Optional: Add a slight upward movement to the text on hover for a nice interactive feel */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-6 transition-colors duration-300">
                 <div className="transform transition-transform duration-300 group-hover:-translate-y-2">
                   <span className="font-bold text-white text-lg drop-shadow-md block">{project.title}</span>
                   {project.gallery.length > 1 && (
@@ -199,7 +214,6 @@ export default function Gallery() {
                     </span>
                   )}
                 </div>
-                
               </div>
             </motion.div>
           ))}
